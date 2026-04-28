@@ -1,0 +1,257 @@
+請讀取以下"對話記錄", 並確認完全理解 local file 和 string file 的解析和規則, 有疑問嗎?
+
+
+# 🔷 Marvel Heroes Omega Localization
+
+
+# 🔴 0. 核心原則（必讀）
+
+1. 遊戲的訊息檔分拆為 4 個 `.string` 二進位檔, 是 4 個獨立資料空間
+2. **offset = file-local（只對該檔有效）**
+3. **entry / variant 順序不可改**
+4. **variant = 固定 14 bytes**
+5. 工具目標：**正確重建 binary layout（不是推導語意）**
+6. 除了 string 外, 所有的數值都是 little-endian
+7. 檔案關聯: 
+   .locale file:    
+    \eng_all.local
+
+    .string files:
+    Directory = "eng.all"
+    \eng.all\eng.all_3FFFFFFFFFFFFFFF.string
+    \eng.all\eng.all_7FFFFFFFFFFFFFFF.string
+    \eng.all\eng.all_BFFFFFFFFFFFFFFF.string
+    \eng.all\eng.all_FFFFFFFFFFFFFFFF.string 
+    其中, "eng_all"取自 .local 的 directory 欄位, 既是資料夾名稱, 也是檔名前綴.
+8. 程式目的為將 4 個分拆的 string file 還原成一個完整 json 檔, 供進行編修, 之後能再分拆為 4 個string files.
+
+---
+
+# 🔷 1. `.locale`（已完全確認）
+
+## 結構
+
+```text
+header "LOC\x2" (4 bytes)
+name (pascal string, 最多16字元) 
+display_name (pascal string, 最多16字元)
+region (pascal string)
+directory (pascal string)
+
+num_flags (1 byte)
+flags[]
+```
+
+---
+
+## LocaleFlag
+
+```text
+uint16 bit_value
+uint16 bit_mask
+pascal string flag_text (1或2字元)
+```
+
+---
+## 說明
+
+* W / A / S / P / P1 / P2 = 文法旗標
+* `.locale` 只影響 runtime 選 variant
+  👉 **不影響你的 parser / writer 正確性**
+
+---
+
+# 🔷 2. `.string`（物理結構）
+
+每個 `.string` file：
+
+```text
+header "STR\x2"
+entries_num (uint16, 檔案內的 entrys 總數) 
+entry table 
+string blob (UTF-8)
+```
+
+
+---
+
+# 🔷 3. Entry（已驗證）
+
+```text
+uint64 locale_string_id
+uint16 num_variants     (num_variants 最小值為1, 代表此entry只有標準內容, 無變體) 
+uint16 flags_produced   (保留，不影響行為)
+uint32 offset           (base string offset)
+
+Variant[num_variants - 1] 
+```
+
+---
+
+## 關鍵
+
+* header = 4 bytes 字串
+* offset → 字串開頭
+* entry 順序不可改
+
+---
+
+# 🔷 4. Variant（最重要）
+
+```text
+uint64 flags_consumed   (8 bytes)
+uint16 flags_produced   (2 bytes)
+uint32 offset           (4 bytes)
+```
+
+---
+
+## 已確認
+
+* 每筆 **固定 14 bytes**
+* 可連續讀（無 drift）
+* offset → 字串開頭
+* flags_produced 不影響行為（但要保留）
+
+
+# 🔷 5. string blob
+
+* UTF-8
+* 連續儲存, ... "abc\0""def\0"...
+* offset = 直接指向字串, 規則是1 offset 對應 1 string.
+* 0x0 字串結尾
+* 保留原始 blob 排序
+
+---
+
+# 🔷 6. 正確實作流程
+
+---
+
+# 🔶 6.1 parse（binary → JSON）
+
+對每個 file：
+
+### 步驟
+
+1. 讀 entry table
+2. 對每個 entry：
+
+   * 讀 base string（offset）
+   * 讀 variants（offset）
+
+3. 建立 JSON
+
+---
+
+## JSON 建議結構（保留 file）
+
+```json
+{
+  "files": {
+    "3": [...],
+    "7": [...],
+    "B": [...],
+    "F": [...]
+  }
+}
+```
+
+---
+
+## entry
+
+```json
+{
+  "locale_string_id": 123,
+  "offset": 123456,
+  "string": "base text",
+  "variants": [
+    {
+      "flags_consumed": 65280,
+      "offset": 123500,
+      "string": "variant text"
+    }
+  ]
+}
+```
+
+---
+
+# 🔶 6.2 write-back（最關鍵）
+
+每個 file **獨立重建**
+
+---
+
+## 🔴 必須保證
+
+### ✔ 結構
+
+* entry 數量完全一致
+* entry 順序完全一致
+* variant 順序完全一致
+
+---
+
+### ✔ 長度
+
+* entry header = 16 bytes
+* variant = 14 bytes（不可變）
+
+---
+
+### ✔ offset
+
+* 指向 string blob 正確位置
+
+---
+
+# 🔴 核心觀念
+
+> **你是在重建 binary layout，不是在修改資料**
+
+---
+
+# 🔷 7. 不要再碰的區域（避免浪費時間）
+
+❌ hash 演算法
+❌ flags_produced 語意
+❌ variant 選擇順序
+❌ locale 文法推導
+
+👉 全部不影響 round-trip
+
+---
+
+# 🔷 8. 唯一驗證方法
+
+## round-trip
+
+```text
+原始 string
+→ JSON
+→ 不修改
+→ 回寫 binary
+→ binary diff
+```
+
+---
+
+## 判斷
+
+* ✔ 完全一致 → 完成
+* ❌ 不一致 → 一定是：
+
+  * offset 錯
+  * 長度錯
+  * 對齊錯
+
+
+---
+
+# 🔴 最終一句話（關鍵）
+
+> 這個系統是「4 個獨立 binary file + 固定 entry + 固定 14-byte variant + UTF-8 blob」，只要你維持結構、順序與 offset 正確，就能 100% 正確 round-trip。
+
+

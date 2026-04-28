@@ -1,0 +1,95 @@
+那就先來個程式, 在指定路徑讀取4個 string file, 一筆一筆取出所有 Entrys 內容, 每一筆加上一欄 "id", 內容是順序流水號, 最後寫入 read_test.json.
+
+
+需要一個或數個函式, 將 4 個 string_file 依序讀取, 解析資料存入 str_map
+1. 依續由 glb_vars.initial_path + "Data/Game/Loco/eng.all/" 當作工作路徑
+2. 依序讀取/解析 eng.all_3FFFFFFFFFFFFFFF.string, eng.all_7FFFFFFFFFFFFFFF.string, eng.all_bFFFFFFFFFFFFFFF.string, eng.all_fFFFFFFFFFFFFFFF.string
+3. 在 AppConfig() 建字串變數 creation_time, 在主程式一開始由 datetime_string(0) 取值.
+
+4. 解析一個 string file, 廣意檔頭賦值:
+4-1. 取 buffer 開頭 4bytes, 若不是 "STR\0x2" 直接結束程式+報錯.
+4-2. str_map.creation_time = glb_vars.creation_time
+4-3. file_ver 先略過
+4-4. str_map.header = buffer 開頭 4 bytes
+4-5. str_map.entries_num[file_key] = buffer 讀 2 bytes (小端序)
+
+5. 讀取一筆 entry 主體, 佔 buffer 16 bytes:
+5-1. entry.id = buffer 讀 8 bytes (都是小端序)
+5-2. entry.var_num = buffer 讀 2 bytes
+5-3. entry.flags_prod = buffer 讀 2 bytes
+5-4. entry.office = buffer 讀 4 bytes
+5-5. entry.string =  add_string(entry.office)
+
+6. 讀取 entry 變體, 每筆佔 buffer 14 bytes:
+6-1. entry.var_num -1 是變體數, 沒有變體就不作.
+6-2. vnt_flags_used = 讀 8 bytes (都是小端序)
+6-3. vnt_flags_prod = 讀 2 bytes
+6-4. vnt_offset = 讀 4 bytes
+6-5. vnt_string = add_vnt_string(vnt_offset)
+6-6. 依序讀完所有變體
+
+7. 可由str_map.entries_num[file_key]取得 entries總數, 或直接讀到 buffer 末端結束, 兩者比數可互為驗證.
+
+8. 依序讀完四個檔, 如無錯誤, 將 str_map 覆寫成 test.json, 其中 entries_num[] 和兩個 status 都壓縮成一行.
+
+
+0. 絕對不要未經告知, 就擅改現在的資料結構和規則, 那都是我驗證通過的.
+1. class string_map 資料結構, 我要拆成兩個 json 檔案儲存.
+2-1. 檔案一 StringMap.json, 內容包括 creation_time, seq_no, uid, status{}, string, 
+     加上如果有變體: vnt_seq_no, vnt_flags_used, vnt_status{}, vnt_string.
+     如果沒有變體: 就連 entry_vnt[] 都不要顯示.
+2-2. status{} 和 vnt_status{} 要壓縮成一列顯示.
+3-1 檔案二 MainTable.json: 內容包含: creation_time, src_lang, file_ver, header, entries_num[4], seq_no, uid, var_num, flags_prod, offset.
+    加上如果有變體: vnt_seq_no, vnt_flags_used, vnt_flags_prod, vnt_offset.
+    如果沒有變體: 就連 entry_vnt[] 都不要顯示.
+3-2 header 要在 json 中要顯示為字串. 允許修改 string_map 中的 header 資料結構.
+
+ 
+ 
+需要一個或數個函式, 將 class string_map 的部份資料結構匯出成一個 json 檔.
+0. 絕對不要未經告知, 就擅改現在的資料結構和規則, 那都是我驗證通過的.
+1. 檔名 debug-src_sample.json, 工作路徑同 StringMap.json.
+2. 內容包括 creation_time, seq_no, status{}, string. ststus 裡只要dollar,hash, hash_slash.
+   加上如果有變體: vnt_seq_no, vnt_status{}, vnt_string. vnt_status 裡只要 vnt_dollar, vnt_hash, vnt_hash_slash.
+   如果沒有變體: 就連 entry_vnt[] 都不要顯示.
+
+有問題請先詢問.
+
+
+請將 class 修改為:
+1. path 處是否有 .\???.all\ 資料夾 x6, 與 ???.all.local x6
+2. exe_pattern = os.path.join() 中的 path, 改成 f"..\..\..\{path}"   
+3. 去除 self.product_version = None 相關的部份, 只留 self.game_version = None
+4. 其它部份都沿用不作改變.
+有問題就先問, 別亂改. 
+
+需要一個函式, 可以內部多個子函式:
+1. 傳入三參數, string: lang("eng.all",/"fra.all"....), flag: dst(file/dir/both), flag: need_bak(True/False)
+2. 當 dst=file, 檢測 .\{lang}.locale 是否存在.
+3. 當 dst=dir, 檢測 .\{lang}\ 資料夾,與其中 {lang}_3FFFFFFFFFFFFFFF.string, {lang}_7FFFFFFFFFFFFFFF.string, {lang}_bFFFFFFFFFFFFFFF.string, {lang}_fFFFFFFFFFFFFFFF.string 是否存在
+4. 當 dst=both, 檢測 2. 與 3. 是否都存在.
+5. 回傳檢測結果 True/False, (非必要: 檔案操作 err_msg)
+6. 當目標完全存在, need_bak=True, 由現有函式 datetime_string(7) 回傳時間字串:月日_時分秒, 將目標更名(覆寫 move也行)為 {lang}.locale."datetime" 和 {lang}."datetime"\, *.string 檔 不需更名
+7. 使用當前工作目錄 (os.getcwd())
+
+class LocaleFile 需求與說明:
+1. 要承接由 locale file 讀取出的資料, 經過編輯後, 再回寫成新的 locale file.
+2. name1_num/name1 和 name2_num/name2 數據完全同步, 事實上可留一組便可, 但 locale file 把它分兩組.
+3. 所有 name 皆小端序, 所有字串皆 utf-8 編碼.
+4. [byte數]欄, 指的是在 locale file 裡佔幾 bytes.
+5. 已確定 flag_text 都只有一至兩個字元.
+6. 需要一個內部函式能傳入新的 name1_num/name1 和 name2_num/name2 的值.
+
+問題: 讀檔/寫檔會建議打包成為內部函式嗎?
+
+
+
+
+ 
+
+
+
+  
+ 
+
+
