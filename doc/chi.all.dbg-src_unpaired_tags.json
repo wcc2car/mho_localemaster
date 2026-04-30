@@ -1,0 +1,532 @@
+{
+  "_comment":"本檔案列出樣本字串檔中未配對的文字標籤 (原廠bug), 應優先修正 (僅供參考)",
+  "creation_time":"2026-04-28 15:26:37",
+  "total":93,
+  "entries":[
+    {
+      "seq_no":1347,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":1629,
+      "string":"#waypointheader#Airfield Showdown (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Germany#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Iron Man is calling for a finish to this conflict. This is it. Will you heed this challenge and go to War?#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":1968,
+      "string":"I have nothing else for you right now.\n\nWhy don't you talk to #mission#Havok#mission# and go see what Professor Xavier needs from you?",
+      "hash":{ "#mission#":2 }
+    },
+    {
+      "seq_no":3611,
+      "string":"#waypointheader#Chapter 3#/waypointheader#    #waypointlabel#LOCATION (Public): #/waypointlabel# #waypointlevels#Lowtown#/waypointlevels##waypointlabel#   LEVEL RANGE: #/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#The capital of Madripoor, Lowtown is currently home to a fierce turf war between HYDRA and Hand ninja forces.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Princess Bar (Madame HYDRA)#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":4674,
+      "string":"#emphasis#For each bar of $secondarymanabehaviorname$#emphasis# filled:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":5868,
+      "string":"$PrimaryManaBehaviorName$ cost reduction instead reduces of the cooldown of #powername#$PowerName$#powername#",
+      "hash":{ "#powername#":2 }
+    },
+    {
+      "seq_no":7039,
+      "string":"#emphasis#Must be #heat#Overheated#/heat##emphasis# to activate#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":7596,
+      "string":"#waypointheader#The Age of Ultron (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Central Park#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Fight to take back Central Park from Ultron and his army of deadly drones.#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":7774,
+      "string":"#powerkeyword#Stance Opener#/powerkeyword# Powers also trigger a #powername#$PowerName$#powername#",
+      "hash":{ "#powername#":2 }
+    },
+    {
+      "seq_no":8643,
+      "string":"#emphasis#While standing in #powername#$powername$#/powername##emphasis#'s area of effect:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":9415,
+      "string":"#couponheader#Your coupon expires soon!#couponheader#",
+      "hash":{ "#couponheader#":2 }
+    },
+    {
+      "seq_no":10812,
+      "string":"#powermechanic#While $secondarymanabehaviorname$#powermechanic# is full:#/powermechanic#",
+      "hash":{ "#powermechanic#":2 },
+      "hash_slash":{ "#/powermechanic#":1 }
+    },
+    {
+      "seq_no":11863,
+      "string":"+$damagePctVulnerabilityVsPower.pct$% for each stack of #emphasis#$powerReference0.powerName$",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":12118,
+      "string":"Adds the #emphasis#ENCHANTMENT NAME/emphasis# enchantment to any Slot 2, 3, or 4 gear of Epic or higher rarity, replacing any existing enchantments already on the item.\n\nLevel 60 enchantment gives you:\n#emphasis#+ENCHANTMENT#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":12194,
+      "string":"#emphasis#First two activations trigger a #powerkeyword#Movement, Sword#/powerkeyword##emphasis# Sweep:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":13271,
+      "string":"#emphasis#While $secondaryresourceoverride.manabehaviorname$#emphasis# is full:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":13702,
+      "string":"#waypointheader#Chapter 10#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#S.W.O.R.D. has established a command post located in a rooftop restaurant overlooking the city.\n\nNOTE: This region is also used for the Hightown Patrol region at Level 60. For other levels, please use the waypoint under the Challenges tab.#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":16879,
+      "string":"#waypointheader#Chapter 1#/waypointheader#    #waypointlabel#LOCATION (Public): #/waypointlabel##waypointlevels#Hell's Kitchen South#/waypointlevels##waypointlabel#   LEVEL RANGE: #/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels##waypointlabel##/waypointlabel# \n#waypointtext#Agent Coulson is in charge of S.H.I.E.L.D.'s recon checkpoint point set up in Hell's Kitchen. The 15th Precinct has their hands full as escaped super villains wreak havoc throughout the streets.#/waypointtext#\n#waypointlabel#Super villain Showdown: #/waypointlabel##waypointtext#Electro's Company#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":17903,
+      "string":"Use any waypoint or terminal to travel to #mission#Hightown/mission#. Hightown is found under the #mission#Story#/mission# tab. \n\n#mission#Complete phases to receive credit#/mission#.  \n\nAll objectives must be completed in #mission#Hightown#/mission# to receive credit.",
+      "hash":{ "#mission#":4 },
+      "hash_slash":{ "#/mission#":3 }
+    },
+    {
+      "seq_no":21104,
+      "string":"#waypointheader#Chapter 4#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Lower East Side#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#Meet up with Multiple Man in a dark corner of the Lower East Side. The locals have been exposed to a severe strand of the Mutant Growth Hormone, causing them to become empowered and very angry.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext# Goblin's Wax Stand#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":21221,
+      "string":"#powermechanic#When you use a #powerkeyword#Melee#/powerkeyword##powermechanic# Power:#/powermechanic#",
+      "hash":{ "#powermechanic#":2 },
+      "hash_slash":{ "#/powermechanic#":1 }
+    },
+    {
+      "seq_no":22230,
+      "string":"#waypointheader#The Age of Ultron (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":22465,
+      "string":"#waypointheader#Hightown Patrol (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Madripoor#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Skrulls have invaded Earth! They blanket the streets of Hightown in Madripoor and the civilians need your help.\n\nTeam up with other heroes (and villains) to protect the city!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":22579,
+      "string":"#waypointheader#Chapter 1#/waypointheader#    #waypointlabel#LOCATION (Public): #/waypointlabel##waypointlevels#Hell's Kitchen South#/waypointlevels##waypointlabel#   LEVEL RANGE: #/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels##waypointlabel##/waypointlabel# \n#waypointtext#Agent Coulson is in charge of S.H.I.E.L.D.'s recon checkpoint point set up in Hell's Kitchen. The 15th Precinct has their hands full as escaped super villains wreak havoc throughout the streets.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Electro's Company#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":23123,
+      "string":"#waypointheader#Chapter 10#/waypointheader#    #waypointlabel#LOCATION: #/waypointlabel# #waypointlevels#Avengers Tower#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":23308,
+      "string":"#emphasis#If an #powerkeyword#Enhancement#/powerkeyword##emphasis# is currently active:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":23523,
+      "string":"Reduce the cooldown of #powername#$powerreference0.PowerName$#/powername# by $eventParam.abs$s whenever you hit with #powername#$powerreference1.PowerName$",
+      "hash":{ "#powername#":2 },
+      "hash_slash":{ "#/powername#":1 }
+    },
+    {
+      "seq_no":23993,
+      "string":"#emphasis#Can only be used while above $evalregisterfloat1.pct$% maximum $primarymanabehaviorname$",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":24178,
+      "string":"#waypointheader#X-Defense#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Xavier's Mansion#/waypointlevels##waypointlabel#   LEVEL:#/waypointlabel##waypointlevels#60#/waypointlevels##waypointtext#\nDefend the students of Xavier's School against waves of attacking villains.\nEach wave increases in difficulty and reward.\nJoin solo or with a group. The mode begins when five heroes are in the queue.\nHow many waves can you last before being overcome by foes?",
+      "hash":{ "#waypointtext#":1 }
+    },
+    {
+      "seq_no":26243,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":26373,
+      "string":"#emphasis#When you use a #powerkeyword#Flourish#/powerkeyword##emphasis# within 4s of a #powerkeyword#Teleport#/powerkeyword# Power:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":27119,
+      "string":"#emphasis#Can only be used while at maximum $primarymanabehaviorname$",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":28163,
+      "string":"#emphasis#When you use a #powerkeyword#Finisher#/powerkeyword##emphasis# Power at full $secondarymanabehaviorname$#emphasis#:#/emphasis#",
+      "hash":{ "#emphasis#":3 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":28480,
+      "string":"#waypointheader#Chapter 10#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#S.W.O.R.D. Landing Zone#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#Skrulls have brought the fight to the streets of Hightown. Your pilot has set down as close as he can, but expect chaos as you enter the city.\n\nThe Skrulls are using Hightown for some greater purpose. Uncover their nefarious plans!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":29003,
+      "string":"#red#This power cannot be used because #powername#$PowerName$#/powername# is active",
+      "hash":{ "#red#":1 }
+    },
+    {
+      "seq_no":29173,
+      "string":"Use the Chapter 5 waypoint to travel to #mission#Wretched Slums#/mission# in #mission#Mutant Town#/mission.\n\nInteract with mission#Rigged Barrels#/mission# to disarm them.\n\nMake sure that you are in #mission#Super Heroic#/mission# mode to ensure you get credit for the mission.",
+      "hash":{ "#Rigged Barrels#":1, "#mission#":3 },
+      "hash_slash":{ "#/mission#":2 }
+    },
+    {
+      "seq_no":29313,
+      "string":"#red#Chaos#/red# affixes have maximum possible effect for $powerreference1.condition0.duration$ when you use #powername#$powerreference0.powername$#powername#",
+      "hash":{ "#powername#":2 }
+    },
+    {
+      "seq_no":29525,
+      "string":"Use any waypoint or terminal to travel to #mission#Hightown/mission#. Hightown is found under the #mission#Story#/mission# tab. \n\n#mission#Complete phases to receive credit#/mission#. #mission#Elite#/mission# enemies are identifiable by their blue and yellow auras.  \n\nAll objectives must be completed in #mission#Hightown#/mission# to receive credit.",
+      "hash":{ "#mission#":5 },
+      "hash_slash":{ "#/mission#":4 }
+    },
+    {
+      "seq_no":29983,
+      "string":"#emphasis#When you use a #powerkeyword#Teleport#/powerkeyword##emphasis# power:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":30268,
+      "string":"#emphasis#The final activation triggers a #powerkeyword#Healing#/powerkeyword#, #powerkeyword#Ribbon#/powerkeyword##emphasis#-wielded #powerkeyword#Axe#/powerkeyword##emphasis# Strike:#/emphasis#",
+      "hash":{ "#emphasis#":3 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":30604,
+      "string":"#waypointheader#Chapter 5#/waypointheader#    #waypointlabel#LOCATION (Public):#/waypointlabel# #waypointlevels#Wretched Slum#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#Located in the center of Mutant Town, Multiple Man is on point to brief heroes on the anti-mutant fanatics, the Purifiers. Led by Reverend William Stryker and armed with new, unfamiliar technology, the Purifiers have set out to find something in Mutant Town.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Lady Deathstrike's Wreck Center#waypointtext#",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":30953,
+      "string":"Hold down the hotkey to incinerate enemies in front of you with a fountain of #emphasis#Hellfire#emphasis#.",
+      "hash":{ "#emphasis#":2 }
+    },
+    {
+      "seq_no":30963,
+      "string":"#waypointheader#Chapter 10#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":30980,
+      "string":"#waypointheader#The Age of Ultron#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":31152,
+      "string":"Hold down the hotkey to incinerate enemies in front of you with a fountain of  #emphasis#Hellfire#emphasis#.",
+      "hash":{ "#emphasis#":2 }
+    },
+    {
+      "seq_no":32571,
+      "string":"#couponheader#Don't forget - You have a coupon!#couponheader#",
+      "hash":{ "#couponheader#":2 }
+    },
+    {
+      "seq_no":33372,
+      "string":"#emphasis#$powerreference0.powername$#/emphasis# cooldown reduced by $condition.CooldownModifierMSForPower.divby1000$s and on use #clobberintime#Clobberin' Time#/clobberintime##emphasis# benefits are doubled",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":33852,
+      "string":"#powermechanic#You may Use this item this power in the Power Tree to open the #stolenpower#Stolen Power#powermechanic# Collection#/powermechanic#",
+      "hash":{ "#powermechanic#":2, "#stolenpower#":1 },
+      "hash_slash":{ "#/powermechanic#":1 }
+    },
+    {
+      "seq_no":36622,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":37077,
+      "string":"#waypointheader#Crossbones Pursuit (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Madripoor#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#We have intel Crossbones is outside a bazaar in Madripoor. We know all to well what he is capable of and should be apprehended immediately.#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":37228,
+      "string":"#powermechanic#When you use a #powerkeyword#Ranged#/powerkeyword##powermechanic# Power:#/powermechanic#",
+      "hash":{ "#powermechanic#":2 },
+      "hash_slash":{ "#/powermechanic#":1 }
+    },
+    {
+      "seq_no":37715,
+      "string":"#powername#When you use a #powerkeyword#$procKeyword.param2.keyword$#/powerkeyword##powername# Power#/powername#",
+      "hash":{ "#powername#":2 },
+      "hash_slash":{ "#/powername#":1 }
+    },
+    {
+      "seq_no":37975,
+      "string":"from #powermechanic#$damagePctVulnerabilityVsPowerKwd.param0.keyword$#powermechanic# Powers",
+      "hash":{ "#powermechanic#":2 }
+    },
+    {
+      "seq_no":39197,
+      "string":"#waypointheader#Hightown Patrol#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Madripoor#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Skrulls have invaded Earth! They blanket the streets of Hightown in Madripoor and the civilians need your help.\n\nTeam up with other heroes (and villains) to protect the city!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":40027,
+      "string":"Use the Chapter 5 waypoint to travel to #mission#Wretched Slums#/mission# in #mission#Mutant Town#/mission.\n\nInteract with mission#Rigged Barrels#/mission# to disarm them.\n\nMake sure that you are in #mission#Normal#/mission# mode to ensure you get credit for the mission.",
+      "hash":{ "#Rigged Barrels#":1, "#mission#":3 },
+      "hash_slash":{ "#/mission#":2 }
+    },
+    {
+      "seq_no":41986,
+      "string":"#emphasis#You must be Imbued with $secondarymanabehaviorname$#emphasis# to activate#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":42600,
+      "string":"Bonus damage versus enemies afflicted with #powermechanic#Hellfire#powermechanic#",
+      "hash":{ "#powermechanic#":2 }
+    },
+    {
+      "seq_no":42972,
+      "string":"#waypointheader#Chapter 7#/waypointheader#    #waypointlabel#LOCATION (Public):#/waypointlabel# #waypointlevels#Mutate Marsh#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel# #waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#On the edge of Mutate Marsh, close to the Chasm of Mist leading to the Infested Jungle. Sabretooth stalks the marsh, acting as the first layer of defense for Sinister's Lab.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Sabretooth Showdown#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":43257,
+      "string":"Deals $evalregisterfloat0.pct$% additional damage per stack of #powermechanic#Hellfire#powermechanic#",
+      "hash":{ "#powermechanic#":2 }
+    },
+    {
+      "seq_no":45060,
+      "string":"when you hit with a #powerkeyword#$Param2.PowerKeyword$#powerkeyword# Power",
+      "hash":{ "#powerkeyword#":2 }
+    },
+    {
+      "seq_no":45719,
+      "string":"#powermechanic#When you pick up a $primarymanabehaviorname$#powermechanic# Orb:#/powermechanic#",
+      "hash":{ "#powermechanic#":2 },
+      "hash_slash":{ "#/powermechanic#":1 }
+    },
+    {
+      "seq_no":48164,
+      "string":"#waypointheader#Chapter 2#/waypointheader#    #waypointlabel#LOCATION (Public):#/waypointlabel# #waypointlevels#Shipping Yard#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#Located along the New Jersey shore, this dockyard is currently controlled by three villainous factions: A.I.M., Hammerhead gang, and a group of mercenaries trained by Taskmaster.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext# Rhino Containment#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":48678,
+      "string":"#emphasis#When you hit with an #powerkeyword#Opener#/powerkeyword##emphasis# Power:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":49218,
+      "string":"Reduce the cooldown of #powername#$PowerReference0.PowerName$#powername# by $ActionsTriggeredOnPowerEvent0.EventParam.abs$s",
+      "hash":{ "#powername#":2 }
+    },
+    {
+      "seq_no":51557,
+      "string":"#waypointheader#Industry City Patrol (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Brooklyn#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Enter the dangerous and tumultuous Industry City and fight off some of the most dastardly villains this side of New York!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":52695,
+      "string":"#waypointheader#Industry City Patrol (Red)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Brooklyn#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Enter the dangerous and tumultuous Industry City and fight off some of the most dastardly villains this side of New York!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":54365,
+      "string":"Damage: +$evalregisterfloat0.pct$% extra damage (0.5% per $powermechanic#Photonic Energy#/powermechanic#)",
+      "hash":{ "#Photonic Energy#":1 }
+    },
+    {
+      "seq_no":55250,
+      "string":"#waypointheader#Midtown Patrol (Cosmic)#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Midtown Manhattan#/waypointlevels##waypointlabel#  Level 60\n#waypointtext#Crime has risen since Doctor Doom's acquisition of the Cosmic Cube. Organizations from around the globe and throughout the galaxy are taking advantage of the chaos. \nPatrol Midtown Manhattan and protect the inhabitants while pushing back groups of super villains as they invade.#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":55571,
+      "string":"#emphasis#$powername$ gains the following effects when used at maximum $secondarymanabehaviorname$",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":55744,
+      "string":"Waypoint: #mission#Prologue#mission#\nDestination: #mission#The Raft#mission#\n\n$AvatarName$, We were expecting you at #mission#The Raft#mission# by now. ...this is odd... We're detecting another time and space anomaly at your current position. Can't say I'm comfortable with just how comfortable we've gotten with these. Adding it to the list.  But right now, we've got a situation at #mission#The Raft#mission# that needs your attention.",
+      "hash":{ "#mission#":8 }
+    },
+    {
+      "seq_no":57683,
+      "string":"when you hit with a #powerkeyword#Melee#powerkeyword# Power",
+      "hash":{ "#powerkeyword#":2 }
+    },
+    {
+      "seq_no":58894,
+      "string":"#emphasis#Choosing this talent allows $displayname$ to fight alongside you until he has been defeated, or is dismissed.#emphasis#",
+      "hash":{ "#emphasis#":2 }
+    },
+    {
+      "seq_no":59668,
+      "string":"#emphasis#When you use a #powerkeyword#Flourish#/powerkeyword##emphasis# Power while Stealthed or Invisible:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    },
+    {
+      "seq_no":60298,
+      "string":"#red##powername#$powerreference0.powername$#/powername##red#,#/red# #powername#$powerreference1.powername$#/powername##red#, or #powername#$powerreference2.powername$#/powername##red# must be selected to choose this talent and changes with each selection#/red#",
+      "hash":{ "#red#":4 },
+      "hash_slash":{ "#/red#":2 }
+    },
+    {
+      "seq_no":60869,
+      "string":"#waypointheader#S.H.I.E.L.D. Helicarrier#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#High-Altitude Patrol#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel##waypointlevels#All#/waypointlevels#\n#waypointtext#The S.H.I.E.L.D. Helicarrier is a state-of-the-art aircraft carrier capable of independent-powered flight, high-powered observation and heavy ordnance weapons deployment. The craft was built by Stark Industries with designs from Tony Stark, Reed Richards and Forge.",
+      "hash":{ "#waypointtext#":1 }
+    },
+    {
+      "seq_no":61319,
+      "string":"#emphasis#When you use The Serum within $duration$ of #red#Starving:#/red#",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":62176,
+      "string":"#emphasis#Secondary Resource - #hardknocks#Hard Knocks#/hardknocks#$/emphasis#",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":62381,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":63550,
+      "string":"#waypointheader#Chapter 6#/waypointheader#    #waypointlabel#LOCATION (Public):#/waypointlabel# #waypointlevels#Hunting Grounds#/waypointlevels##waypointlabel#   LEVEL RANGE: #/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#This hidden cabin that serves as a S.H.I.E.L.D. outpost is located deep in the woods of Upstate New York, not far from the Purifier's headquarters.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Blob & Toad's Circus Sideshow#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":64280,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":64421,
+      "string":"Use this item this item to increase your Experience Gain by 200%, Special Item Find by 200%, your Rare Item Find by 200%, and double your Eternity Splinter droprate. This potion also increase your chances of getting extra Odin Marks when completing Legendary Quests. In addition, this also increases your chance for Odin Marks to drop from any boss as well as X-Defense End Chests. Lasts for 3 hours.\n#emphasis#Increases chance to receive Odin's Gift, a large bounty of rewards, whenever you defeat a boss or complete X-Defense or Holo-Sim.\nEach additional potion that bestows this effect will extend its duration.",
+      "hash":{ "#emphasis#":1 }
+    },
+    {
+      "seq_no":64696,
+      "string":"#waypointheader#$RegionName$#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":67887,
+      "string":"Gain +$DamageMult.pct$% Damage and +$dodgeRatingBonusMult.pct$% Dodge Rating Multiplier for $duration$ when you use a #powerkeyword#Movement#powerkeyword# power",
+      "hash":{ "#powerkeyword#":2 }
+    },
+    {
+      "seq_no":69641,
+      "string":"#waypointheader#Avengers Tower#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#New York City#/waypointlevels##waypointlabel#   LEVEL RANGE:#/waypointlabel##waypointlevels#Any#/waypointlevels#\n#waypointtext#Avengers Towers is a 93-story building in the heart of Midtown Manhattan within the Stark Tower Complex. The tower houses support staff, tech labs and everything a hero could need to support their missions.",
+      "hash":{ "#waypointtext#":1 }
+    },
+    {
+      "seq_no":71299,
+      "string":"#waypointheader#Chapter 10#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionName$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":71475,
+      "string":"#emphasis#Choosing this talent allows $displayname$ to fight alongside you until she has been defeated, or is dismissed.#emphasis#",
+      "hash":{ "#emphasis#":2 }
+    },
+    {
+      "seq_no":71576,
+      "string":"#waypointheader#Genoshan Battlefront#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#Genosha#/waypointlevels##waypointlabel#\n#waypointtext#Onslaught has been kidnapping mutants and holding them hostage in the Ruins of Genosha!\n\nEnter the fray and put a stop to his evildoings!#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":73436,
+      "string":"+$DamagePctVulnerabilityVsPowerKwd.pct$% from #powermechanic#$damagePctVulnerabilityVsPowerKwd.param0.keyword$#powermechanic# Powers",
+      "hash":{ "#powermechanic#":2 }
+    },
+    {
+      "seq_no":73652,
+      "string":"Vulnerability: Enemy takes $damagePctVulnerabilityVsPowerKwd$% extra damage from #orange$$damagePctVulnerabilityVsPowerKwd.param0.keyword$#/orange# Powers",
+      "hash_slash":{ "#/orange#":1 }
+    },
+    {
+      "seq_no":76342,
+      "string":"Regenerate $healing.nofraction$ Health when you hit with a #powerkeyword#$Param2.PowerKeyword$#powerkeyword# Power",
+      "hash":{ "#powerkeyword#":2 }
+    },
+    {
+      "seq_no":76387,
+      "string":"#waypointheader#Chapter 3#/waypointheader#    #waypointlabel#LOCATION (Public): #/waypointlabel# #waypointlevels#Bamboo Forest#/waypointlevels##waypointlabel#   LEVEL RANGE: #/waypointlabel##waypointlevels#$MinLevel$-$MaxLevel$#/waypointlevels#\n#waypointtext#Just beyond Bucaneer Beach lies the Bamboo Forest, where The Hand ninja clan and the deadly Serpent Warriors are working together.#/waypointtext#\n#waypointlabel#Super Villain Showdown: #/waypointlabel##waypointtext#Watermill (Gorgon)#waypointtext# ",
+      "hash":{ "#waypointtext#":3 },
+      "hash_slash":{ "#/waypointtext#":1 }
+    },
+    {
+      "seq_no":76490,
+      "string":"#waypointheader#Fury's Toolshed#/waypointheader#    #waypointlabel#LOCATION:#/waypointlabel# #waypointlevels#$RegionLocation$#/waypointlevels##waypointlabel#  $RegionAccessTags$\n#waypointtext#$RegionDescription$#/waypointtext#",
+      "hash":{ "#waypointlabel#":2 },
+      "hash_slash":{ "#/waypointlabel#":1 }
+    },
+    {
+      "seq_no":76748,
+      "string":"#emphasis#When you hit an affected enemy with an #orange#Electric#/orange##emphasis# Power:#/emphasis#",
+      "hash":{ "#emphasis#":2 },
+      "hash_slash":{ "#/emphasis#":1 }
+    }
+  ]
+}
