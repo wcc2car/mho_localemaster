@@ -1,4 +1,4 @@
-#Marvel Heroes Omega localization tool
+# Marvel Heroes Omega localization tool
 
 - Free to distribute and use. This software has not been extensively tested, and compatibility or reliability is not guaranteed.
 - Tested only on Windows 10 x64 (Traditional Chinese edition) — localization of the game has been completed.
@@ -12,7 +12,7 @@
 
 [=============== CHT Text ===============]
 
-#MarvelHeroes Omega 遊戲的中文化工具
+# MarvelHeroes Omega 遊戲的中文化工具
 
 - 歡迎無償散佈‚ 本軟體並未經廣泛測試, 不保證相容性與可靠度.
 - 本程式僅於 Windows 10 x64 中文版測試 - 已完成遊戲的中文化.  
