@@ -8,8 +8,8 @@
 <br>
 
 - MHO localization data is sourced from the MHServerEmu project; thanks to all contributors.
-* https://github.com/Crypto137/MHServerEmu/blob/master/docs/GameData/Locale.md 
-* https://discord.com/invite/hjR8Bj52t3
+- https://github.com/Crypto137/MHServerEmu/blob/master/docs/GameData/Locale.md 
+- https://discord.com/invite/hjR8Bj52t3
 
 
 [=============== CHT Text ===============]
@@ -21,7 +21,8 @@
 - 所有英文訊息內容以 ChatGPT+ Gemini翻譯完成. 
 - 本程式設計用於遊戲 1.52版, 未測試其它版本相容性. 
 - 遊戲繁中版試作展示影片: https://www.youtube.com/playlist?list=PL_Py5sxYPDhF3YpfScFYSw-zGbb823lDq
-    
+<br>
+
 - MHO 語言包資料來自 MHServerEMU 專案‚ 感謝專案成員們. 
 - https://github.com/Crypto137/MHServerEmu/blob/master/docs/GameData/Locale.md 
 - https://discord.com/invite/hjR8Bj52t3
