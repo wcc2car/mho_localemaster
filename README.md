@@ -8,8 +8,8 @@
 <br>
 
 - MHO localization data is sourced from the MHServerEmu project; thanks to all contributors.
-- https://github.com/Crypto137/MHServerEmu/blob/master/docs/GameData/Locale.md 
-- https://discord.com/invite/hjR8Bj52t3
+* https://github.com/Crypto137/MHServerEmu/blob/master/docs/GameData/Locale.md 
+* https://discord.com/invite/hjR8Bj52t3
 
 
 [=============== CHT Text ===============]
